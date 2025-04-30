@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot - GlobeGuide</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao GlobeGuide!</h1>
+  <p>Fale com nosso assistente abaixo 👇</p>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="GlobeGuide"
+    agent-id="a98badc5-5a4c-4898-987d-f93310228720"
+    language-code="en">
+  </df-messenger>
+</body>
+</html>
