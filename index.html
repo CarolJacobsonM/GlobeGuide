@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chatbot - GlobeGuide</title>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-image: url('images/IMG_0576.jpg'); /* Caminho da imagem */
-    background-size: cover;                 /* A imagem cobre toda a tela */
-    background-position: center;            /* Centraliza a imagem */
-    background-repeat: no-repeat;           /* Evita repetição da imagem */
-    text-align: center;
-    padding-top: 100px;
-    color: white; /* Para melhorar contraste do texto, se necessário */
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('images/IMG_0576.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding-top: 100px;
+      color: white;
+    }
 
-  p, h1 {
-      background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+    p, h1 {
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 10px;
       border-radius: 10px;
       text-shadow: 2px 2px 4px #000;
@@ -27,7 +28,23 @@
     h1 {
       font-size: 36px;
     }
-</style>
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      body {
+        padding-top: 50px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to GlobeGuideBot!</h1>
